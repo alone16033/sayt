@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&family=Merriweather:ital,wght@0,700;1,700&family=Roboto+Condensed:ital,wght@0,700;1,700&family=Ubuntu:ital,wght@0,700;1,700&display=swap');
+
+:root{
+    --golos: 'Golos Text', sans-serif;
+    --merri: 'Merriweather', serif;
+    --roboto: 'Roboto Condensed', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: var(--merri);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.4;
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.header{
+    width:100%;
+    height: 100vh;
+    background-image: url(/img/3.jpg) ;
+    background-size: cover,100%;
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+   background-color: rgb(153, 128, 91) ;
+}
+
+.navigation a{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: rgb(82, 54, 13);
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition: all 0.5 linear;
+}
+
+.navigation a:focus, a:hover{
+    color: rgb(19, 14, 14);
+ }
+
+.header .fa-bars{
+    color: #fff;
+    display: none;
+}
+
+.banner{
+    position: absolute;
+    margin-top: 10%;
+    width: 70%;
+
+}
+
+.banner h1{
+    text-align: center;
+    color: #181111;
+    font-family: var(--roboto);
+    font-size: 6rem;
+    letter-spacing: 2px;
+    margin-left: 40%;
+}
+
+.banner p{
+    color: #111414;
+    opacity: 0.6;
+    font-family: var(--golos);
+    font-size: 1.3rem;
+    width: 60%;
+    margin-left: 40%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #0c0c0b;
+}
+
+.banner p span{
+    color: green;
+    opacity: 1;
+}
+
+.banner p a{
+    color: #2f1aa3;
+}
+
+.about{
+    width: 100%;
+    padding: 4.8rem 0;
+    background-color: #2b2b2b;
+}
+
+.about__content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 2.6rem;
+ }
+
+ .about__item img{
+    border-radius: 100%;
+    width: 160px;
+ }
+ .about__item .tille{
+    color: #fff;
+    text-align: left;
+
+ }
+
+ .about__item .title h2{
+    color: #0f89b9;
+    font-family: var(--merri);
+    letter-spacing: 1px ;
+    margin-bottom: 0.9rem;
+ }
+ .about__item .title p{
+    opacity: 0.7;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 85%;
+    color: #fff;
+ }
+.about__detal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.about__detal h2{
+    color: #0a749e;
+    font-family: var(--merri);
+    letter-spacing: 1px ;
+    margin-bottom: 0.9rem;
+}
+
+.about__detal p{
+    opacity: 0.7;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 50%;
+    font-family: var(--golos);
+    color: #fff;
+}
+
+.work{
+    width: 100%;
+    padding: 4.8rem 0;
+    background-color: whitesmoke;
+}
+
+.work .title h2{
+     text-align: center;
+     margin-bottom: 3rem;
+     font-family: var(--roboto);
+}
+
+.work__content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.resume{
+    width: 100%;
+    padding: 4.8rem 0;
+    background-color: #fff;
+
+}
+
+.resume__content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 2rem;
+    border-bottom: 1px solid rgb(82, 54, 13);
+    margin-bottom: 2rem;
+}
+.resume__item h2{
+    color: #2b2b2b;
+    border-bottom: 1ox solid black;
+    display: inline-block;
+}
+
+.resume__item .title{
+    margin-bottom: 2rem;
+}
+
+
+
+.resume__item .title h2{
+    color: black;
+    border: 0;
+    font-family: var(--ubuntu);
+    margin-bottom: 1rem;
+}  
+
+.resume__item .title i{
+    color: #b99c16;
+    font-family: var(--roboto);
+   
+}
+
+.resume__item .title p{
+    margin-top: 0.5rem;
+    color: #2b2b2b;
+    font-family: var(--golos);
+    width: 80%;
+}
+
+.resume__progress{
+    width: 100%;
+}
+
+.resume__progress p{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-family: var(--merri);
+    font-size: 1.2rem;
+}
+
+.add{
+    width: 100%;
+    padding: 4.8rem 0;
+    background-color: rgb(116, 111, 111);
+}
+
+.add .title h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: var(--merri);
+}
+
+.contact{
+    width: 100%;
+    padding: 4.8rem 0;
+    background-color: rgb(151, 147, 147);
+}
+
+.contact  .title{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 3rem;
+
+}
+
+.contact .title .fa-envelope{
+    font-size: 3rem;
+    color: #e4d2d2;
+}
+
+.contact .title p{
+    color: rgb(56, 51, 46);
+    font-size: 1.3rem;
+    font-family: var(--merri);
+}
+
+
+.contact__contect{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.contact__item1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 0rem;
+}
+
+.contact__item1 h3{
+    color: #181414;
+    margin-top: 1rem;
+}
+.contact__item1 input{
+    width: 80%;
+    height: 8vh;
+    background-color: rgb(20, 20, 7);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.contact__item1 input:focus{
+    background-color: white;
+}
+
+.contact__item1 textarea{
+    width: 80%;
+    height: 40vh;
+    background-color:rgb(25, 26, 13) ;
+} 
+
+.contact__item1 textarea:focus{
+    background-color: rgb(163, 89, 89) ;
+}
+
+.contact__item1 input[type='submit']{
+    width: 25%;
+    height: 6vh;
+    border-radius: 10px;
+    color: white;   
+}
+
+.contact__item1 input[type='submit']:hover{
+    background-color: #2616b9;
+}
+
+.contact__item2 h2{
+    color: #fff;
+    font-family: var(--roboto);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.contact__item2 p{
+    color: #4c4c48;
+    
+}
+
+
+.footer{
+    width: 100%;
+    padding: 4.8rem;
+    background-color: #4c4c48;
+}
+
+.footer__media{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.footer p{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer p a{
+    color: #0a749e;
+}
+
+.footer__media i:hover{
+    color: black;
+}
+
+
